@@ -8,7 +8,10 @@ class LetterDemo
 }
 
 // Write your classes here
-
+    class public LetterDemo
+{
+    
+}
 
 /*
  * Instructions
