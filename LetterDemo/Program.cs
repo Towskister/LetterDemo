@@ -4,6 +4,8 @@ class LetterDemo
     static void Main()
     {
         // Write your code here
+        Letter letter = new Letter;
+        CertifiedLetter certifiedLetter = new CertifiedLetter;
     }
 }
 
@@ -12,6 +14,14 @@ class LetterDemo
     {
         public string recipientName { get; set;}
         public string mailedDate { get; set;}
+        public override string ToString()
+            {
+                return this.GetType() + ": " + recipientName + " " + mailedDate;
+            }
+    }
+    class public CertifiedLetter : Letter
+    {
+        public string TrackingNumber { get; set;}
     }
 
 /*
